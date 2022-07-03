@@ -13,3 +13,4 @@ def min_path(matrix,i,j,x,y):
 
 matrix=[[1,1,5],[0,1,3],[4,0,1]]
 print(min_path(matrix,0,0,len(matrix)-1,len(matrix[0])-1))
+#this is done with recurssive technique I am going to update the tabular form later 
