@@ -157,15 +157,31 @@ class Binary():
 
         return max(calculate,max(left,right))
 
-    def top_view(self,start,dict,count):
+    def top_view(self,start):
 
-        if(count not in dict):
-            dict[count]=start.data
+        count=0
+        queue=[start]
 
-        if(start.left is not None): self.top_view(start.left,dict,count-1)
-        if (start.right is not None): self.top_view(start.right, dict, count + 1)
+        dict={}
+        data=[0]
 
-        return dict
+        while(len(queue)!=0):
+
+            hold=queue.pop(0)
+            count=data.pop(0)
+            if(count not in dict):
+                dict[count]=hold.data
+            if(hold.left):
+                queue.append(hold.left)
+                data.append(count-1)
+            if(hold.right):
+                queue.append(hold.right)
+                data.append(count+1)
+
+        return dict.values()
+
+
+
 
     def num_nodes(self,start):
         if(start is None): return 0
@@ -207,8 +223,13 @@ print(tree.lca(tree.root,30,60))
 
 print(tree.longest_path(tree.root))#longest path from left to right in the binary tree
 
-print(tree.top_view(tree.root,{},0))#top view of the binary tree
+print(tree.top_view(tree.root))#top view of the binary tree
+
+print(tree.bottom_view(tree.root))#bottom view of the binary tree
 
 print(tree.num_nodes(tree.root))#number of nodes in the binary tree
 
 print(tree.max_value(tree.root))#max value in the binary tree
+
+
+#bottom view,tree from inorder preorder,tree to linked list,
