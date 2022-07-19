@@ -14,4 +14,4 @@ def lcs_recursion(s1,s2,i,j):
 s1,s2=map(str,input().split(' '))
 print(lcs_recursion(s1,s2,0,0))
 
-#complexity(O(2^n))
+#complexity(O(2^n)), but a runtime error will be there....going to upload it later
