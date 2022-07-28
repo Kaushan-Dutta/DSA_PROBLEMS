@@ -17,4 +17,4 @@ def encrypt(string,increase):
 
 string=input()
 increase=int(input())
-print(encrypt(string,increase))
+print(encrypt(string,increase)),
