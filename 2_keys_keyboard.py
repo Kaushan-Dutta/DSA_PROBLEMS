@@ -1,4 +1,4 @@
-#given a number you have to find out the minimum number of steps to form that string, by only using copy and paste method
+#given a number, you have to find out the minimum number of steps to form that string, by only using copy and paste method
 #ex INPUT-3 OUTPUT-3
 def minSteps(num):
    if (n == 0 or n==1): return 0
