@@ -11,9 +11,7 @@ void insert(struct node **Node,struct node **rear,int item)
     if(*Node==NULL)
     {
         *Node=ptr;
-        
-        
-         
+  
     }
     else{
         (*rear)->next=ptr;
