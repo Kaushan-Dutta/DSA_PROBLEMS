@@ -1,4 +1,4 @@
-#this program is having the all sorts of the possible question from a Binary tree
+#this program have the all sorts of the possible question from a Binary tree
 
 class Node():
     def __init__(self,data):
