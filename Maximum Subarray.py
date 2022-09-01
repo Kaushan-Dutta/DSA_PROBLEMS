@@ -1,4 +1,4 @@
-#finding out the subarray that is having the maximum sum
+#finding out the subarray that is having the maximum su
 #ex-INPUT--array=[-2,1,-3,4,-1,2,1,-5,4] OUTPUT--6(the array is [4,-1,2,1])
 
 def max_subarray(array):
