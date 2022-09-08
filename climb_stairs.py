@@ -1,4 +1,4 @@
-#given the number of stairs find the number of ways to react the top of stairs if taking only 1 or 2 steps up
+#given the number of stais find the number of ways to react the top of stairs if taking only 1 or 2 steps up
 #ex INPUT--3 OUTPUT--3
 def num_moves(stairs):
 
