@@ -1,0 +1,12 @@
+N=int(input())
+a1,m1=list(map(int,input().split()))
+a2,m2=list(map(int,input().split()))
+mn=999
+i=0
+while(N>=i*a1):
+      value=i*a1
+      rem=N-value
+      if(rem%a2==0):
+         mn=min(mn,((i*m1)+(rem//a2)*m2))
+      i+=1
+print(mn)
